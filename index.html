@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Kingdom Clicker</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script>
+        function load() {
+            document.getElementById('controls').style.marginLeft = screen.width - 710 + "px";
+          }
+            window.onload = load;
+        </script>
+    </head>
+    <body>
+        <div id="container">
+          <canvas id="canvas" style="position:absolute"></canvas>
+          
+          <menu id="controls">
+          <input type="radio" name="nav" id="one" checked="checked"/>
+          <label for="one">One</label>
+          
+          <input type="radio" name="nav" id="two"/>
+          <label for="two">Two</label>
+          
+          <input type="radio" name="nav" id="three"/>
+          <label for="three">Three</label>
+          
+          <article class="content one">
+              <button id="click" class="button button_primary">click me!</button>
+              <button id="buy_click" class="button button_primary">Buy an autoclick for 1</button>
+              <button id="buy_House" class="button button_primary">Buy a house for 100</button>
+              <button id="buy_Farm" class="button button_primary">Buy a farm for 100</button>
+              <button id="buy_Windmill" class="button button_primary">Buy a windmill for 100</button>
+              <button id="buy_Barn" class="button button_primary">Buy a barn for 100</button>
+              </article>
+          
+          <article class="content two">
+              <button id="buy_Fountain" class="button button_primary">Buy a fountain for 100</button>
+              <button id="buy_Armory" class="button button_primary">Buy an armory for 100</button>
+              <button id="buy_Smithy" class="button button_primary">Buy a smithy for 100</button>
+              <button id="buy_Church" class="button button_primary">Buy a church for 100</button>
+              <button id="buy_Bakery" class="button button_primary">Buy a bakery for 100</button>
+              <button id="buy_Lumbermill" class="button button_primary">Buy a lumbermill for 100</button>
+               </article>
+          
+          <article class="content three">
+              <button id="buy_Hunter's Lodge" class="button button_primary">Buy a hunter's lodge for 100</button>
+              <button id="buy_Hospital" class="button button_primary">Buy a hospital for 100</button>
+              <button id="buy_Warehouse" class="button button_primary">Buy a warehouse for 100</button>
+              <button id="buy_Wall" class="button button_primary">Buy a wall for 100</button>
+              <button id="buy_Watchtower" class="button button_primary">Buy a watch tower for 100</button>
+              <button id="cheaty" class="button button_primary">Feed me Clicks</button>
+              <button id="populate" class="button button_primary">Build Everything</button>
+         </article>
+               </menu>
+          <menu id="digits">
+          <input type="radio" name="nav2" id="four" checked="checked"/>
+          <label for="four">One</label>
+          
+          <input type="radio" name="nav2" id="five"/>
+          <label for="five">Two</label>
+          
+          <input type="radio" name="nav2" id="six"/>
+          <label for="six">Thre</label>
+          
+          <article class="content2 four">
+              <div id="total_Houses">Houses: 0</div>
+              <div id="total_Farms">Farms: 0</div>
+              <div id="total_Windmills">Windmills: 0</div>
+              <div id="total_Barns">Barns: 0</div>
+              <div id="total_Fountains">Fountains: 0</div>
+              <div id="total_Armories">Armories: 0</div>
+              <div id="total_Smithies">Smithies: 0</div>
+              <div id="total_Churches">Churches: 0</div>
+              <div id="total_Bakeries">Bakeries: 0</div>
+              <div id="total_Lumbermills">Lumbermills: 0</div>
+              <div id="total_HuntersLodge">Hunter's Lodges: 0</div>
+              <div id="total_Hospitals">Hospitals: 0</div>
+              <div id="total_Warehouses">Warehouses: 0</div>
+              <div id="total_Walls">Walls: 0</div>
+              <div id="total_Watchtowers">Watchtowers: 0</div>
+          </article>
+          
+          <article class="content2 five">
+              <div id="total_clicks">Clicks: 0</div>
+              <div id="clicks_per_second">Clicks per second: 0</div>
+              <ul id="inventory">Inventory:</ul>
+               </article>
+          
+          <article class="content2 six">
+              Manage:
+         </article>
+          </menu>
+          <menu id="storyBox">
+            <div id="content">
+            <div id="location">Start</div>
+            <div id="text">Sample</div>
+            </div>
+          </menu>
+        </div>
+      <script type="text/javascript" src="js/maths.js"></script>
+      <script type="text/javascript" src="js/trees.js"></script>
+      <script type="text/javascript" src="js/props.js"></script>
+      <script type="text/javascript" src="js/enemies.js"></script>
+      <script type="text/javascript" src="js/item.js"></script>
+      <script type="text/javascript" src="js/player.js"></script>
+      <script type="text/javascript" src="js/dungeon.js"></script>
+      <script type="text/javascript" src="js/level.js"></script>
+      <script type="text/javascript" src="js/story.js"></script>
+      <script type="text/javascript" src="js/increment.js"></script>
+      <script type="text/javascript" src="js/canvas.js"></script>
+    </body>
+</html>
