@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Kingdom Clicker</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <script>
+        function load() {
+            Renderer.Initialize();
+            Level.IncreaseLevel();
+          }
+            window.onload = load;
+        </script>
+    </head>
+    <body style="background-color: aliceblue;">
+        <div id="container">
+          <canvas id="canvas" style="position:absolute"></canvas>          
+          <menu id="controls"></menu>
+        </div>
+
+      <script type="text/javascript" src="js/maths.js"></script>
+      <script type="text/javascript" src="js/props.js"></script>
+      <script type="text/javascript" src="js/enemies.js"></script>
+      <script type="text/javascript" src="js/item.js"></script>
+      <script type="text/javascript" src="js/player.js"></script>
+      <script type="text/javascript" src="js/dungeon.js"></script>
+      <script type="text/javascript" src="js/level.js"></script>
+    </body>
+</html>
